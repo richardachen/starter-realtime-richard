@@ -22,8 +22,8 @@
  
 <script>
 
-    // your token from https://account.mapbox.com
-
+      // your token from https://account.mapbox.com
+    mapboxgl.accessToken = "pk.eyJ1IjoicmFjaGVuIiwiYSI6ImNremYxZmpkMjJtNzAyb3BxdDVnZXl0MWkifQ.PwmasYVtQw0NgfbsPp9nLg";
     // add map to page
     var map = new mapboxgl.Map({
         container: 'map',
@@ -32,6 +32,9 @@
         zoom: 12
     });
 
+    var marker = new mapboxgl.Marker()
+      .setLngLat([-71.091542,42.358862])
+      .addTo(map)
     // add marker to map
 
 </script>
