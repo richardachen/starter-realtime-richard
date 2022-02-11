@@ -1,0 +1,569 @@
+{
+    "data": [
+        {
+            "attributes": {
+                "bearing": 0,
+                "current_status": "IN_TRANSIT_TO",
+                "current_stop_sequence": 9,
+                "direction_id": 0,
+                "label": "1861",
+                "latitude": 42.33956529,
+                "longitude": -71.08040835,
+                "occupancy_status": "MANY_SEATS_AVAILABLE",
+                "speed": null,
+                "updated_at": "2022-02-11T10:01:27-05:00"
+            },
+            "id": "y1861",
+            "links": {
+                "self": "/vehicles/y1861"
+            },
+            "relationships": {
+                "route": {
+                    "data": {
+                        "id": "1",
+                        "type": "route"
+                    }
+                },
+                "stop": {
+                    "data": {
+                        "id": "87",
+                        "type": "stop"
+                    }
+                },
+                "trip": {
+                    "data": {
+                        "id": "50262418",
+                        "type": "trip"
+                    }
+                }
+            },
+            "type": "vehicle"
+        },
+        {
+            "attributes": {
+                "bearing": 135,
+                "current_status": "IN_TRANSIT_TO",
+                "current_stop_sequence": 14,
+                "direction_id": 1,
+                "label": "1852",
+                "latitude": 42.34237,
+                "longitude": -71.08418,
+                "occupancy_status": "MANY_SEATS_AVAILABLE",
+                "speed": null,
+                "updated_at": "2022-02-11T10:01:18-05:00"
+            },
+            "id": "y1852",
+            "links": {
+                "self": "/vehicles/y1852"
+            },
+            "relationships": {
+                "route": {
+                    "data": {
+                        "id": "1",
+                        "type": "route"
+                    }
+                },
+                "stop": {
+                    "data": {
+                        "id": "82",
+                        "type": "stop"
+                    }
+                },
+                "trip": {
+                    "data": {
+                        "id": "50262352",
+                        "type": "trip"
+                    }
+                }
+            },
+            "type": "vehicle"
+        },
+        {
+            "attributes": {
+                "bearing": 236,
+                "current_status": "IN_TRANSIT_TO",
+                "current_stop_sequence": 20,
+                "direction_id": 1,
+                "label": "1836",
+                "latitude": 42.3322468,
+                "longitude": -71.075331039,
+                "occupancy_status": "MANY_SEATS_AVAILABLE",
+                "speed": null,
+                "updated_at": "2022-02-11T10:01:17-05:00"
+            },
+            "id": "y1836",
+            "links": {
+                "self": "/vehicles/y1836"
+            },
+            "relationships": {
+                "route": {
+                    "data": {
+                        "id": "1",
+                        "type": "route"
+                    }
+                },
+                "stop": {
+                    "data": {
+                        "id": "10100",
+                        "type": "stop"
+                    }
+                },
+                "trip": {
+                    "data": {
+                        "id": "50262350",
+                        "type": "trip"
+                    }
+                }
+            },
+            "type": "vehicle"
+        },
+        {
+            "attributes": {
+                "bearing": 160,
+                "current_status": "IN_TRANSIT_TO",
+                "current_stop_sequence": 12,
+                "direction_id": 1,
+                "label": "1834",
+                "latitude": 42.347115879,
+                "longitude": -71.08781775,
+                "occupancy_status": "FEW_SEATS_AVAILABLE",
+                "speed": null,
+                "updated_at": "2022-02-11T10:01:28-05:00"
+            },
+            "id": "y1834",
+            "links": {
+                "self": "/vehicles/y1834"
+            },
+            "relationships": {
+                "route": {
+                    "data": {
+                        "id": "1",
+                        "type": "route"
+                    }
+                },
+                "stop": {
+                    "data": {
+                        "id": "79",
+                        "type": "stop"
+                    }
+                },
+                "trip": {
+                    "data": {
+                        "id": "50262348",
+                        "type": "trip"
+                    }
+                }
+            },
+            "type": "vehicle"
+        },
+        {
+            "attributes": {
+                "bearing": 112,
+                "current_status": "IN_TRANSIT_TO",
+                "current_stop_sequence": 3,
+                "direction_id": 1,
+                "label": "1801",
+                "latitude": 42.37022865,
+                "longitude": -71.11367212,
+                "occupancy_status": "MANY_SEATS_AVAILABLE",
+                "speed": null,
+                "updated_at": "2022-02-11T10:01:26-05:00"
+            },
+            "id": "y1801",
+            "links": {
+                "self": "/vehicles/y1801"
+            },
+            "relationships": {
+                "route": {
+                    "data": {
+                        "id": "1",
+                        "type": "route"
+                    }
+                },
+                "stop": {
+                    "data": {
+                        "id": "67",
+                        "type": "stop"
+                    }
+                },
+                "trip": {
+                    "data": {
+                        "id": "50262387",
+                        "type": "trip"
+                    }
+                }
+            },
+            "type": "vehicle"
+        },
+        {
+            "attributes": {
+                "bearing": 128,
+                "current_status": "IN_TRANSIT_TO",
+                "current_stop_sequence": 1,
+                "direction_id": 1,
+                "label": "1796",
+                "latitude": 42.32974306,
+                "longitude": -71.08413709,
+                "occupancy_status": "MANY_SEATS_AVAILABLE",
+                "speed": null,
+                "updated_at": "2022-02-11T10:01:27-05:00"
+            },
+            "id": "y1796",
+            "links": {
+                "self": "/vehicles/y1796"
+            },
+            "relationships": {
+                "route": {
+                    "data": {
+                        "id": "1",
+                        "type": "route"
+                    }
+                },
+                "stop": {
+                    "data": {
+                        "id": "64",
+                        "type": "stop"
+                    }
+                },
+                "trip": {
+                    "data": {
+                        "id": "50262349",
+                        "type": "trip"
+                    }
+                }
+            },
+            "type": "vehicle"
+        },
+        {
+            "attributes": {
+                "bearing": 300,
+                "current_status": "IN_TRANSIT_TO",
+                "current_stop_sequence": 10,
+                "direction_id": 0,
+                "label": "1736",
+                "latitude": 42.34122576,
+                "longitude": -71.082757189,
+                "occupancy_status": "FEW_SEATS_AVAILABLE",
+                "speed": null,
+                "updated_at": "2022-02-11T10:01:24-05:00"
+            },
+            "id": "y1736",
+            "links": {
+                "self": "/vehicles/y1736"
+            },
+            "relationships": {
+                "route": {
+                    "data": {
+                        "id": "1",
+                        "type": "route"
+                    }
+                },
+                "stop": {
+                    "data": {
+                        "id": "188",
+                        "type": "stop"
+                    }
+                },
+                "trip": {
+                    "data": {
+                        "id": "50262440",
+                        "type": "trip"
+                    }
+                }
+            },
+            "type": "vehicle"
+        }
+    ],
+    "included": [
+        {
+            "attributes": {
+                "bikes_allowed": 1,
+                "block_id": "C01-4",
+                "direction_id": 1,
+                "headsign": "Nubian",
+                "name": "",
+                "wheelchair_accessible": 1
+            },
+            "id": "50262348",
+            "links": {
+                "self": "/trips/50262348"
+            },
+            "relationships": {
+                "route": {
+                    "data": {
+                        "id": "1",
+                        "type": "route"
+                    }
+                },
+                "route_pattern": {
+                    "data": {
+                        "id": "1-_-1",
+                        "type": "route_pattern"
+                    }
+                },
+                "service": {
+                    "data": {
+                        "id": "BUS12022-hbc12011-Wdy-02",
+                        "type": "service"
+                    }
+                },
+                "shape": {
+                    "data": {
+                        "id": "010109",
+                        "type": "shape"
+                    }
+                }
+            },
+            "type": "trip"
+        },
+        {
+            "attributes": {
+                "bikes_allowed": 1,
+                "block_id": "C01-14",
+                "direction_id": 1,
+                "headsign": "Nubian",
+                "name": "",
+                "wheelchair_accessible": 1
+            },
+            "id": "50262349",
+            "links": {
+                "self": "/trips/50262349"
+            },
+            "relationships": {
+                "route": {
+                    "data": {
+                        "id": "1",
+                        "type": "route"
+                    }
+                },
+                "route_pattern": {
+                    "data": {
+                        "id": "1-_-1",
+                        "type": "route_pattern"
+                    }
+                },
+                "service": {
+                    "data": {
+                        "id": "BUS12022-hbc12011-Wdy-02",
+                        "type": "service"
+                    }
+                },
+                "shape": {
+                    "data": {
+                        "id": "010109",
+                        "type": "shape"
+                    }
+                }
+            },
+            "type": "trip"
+        },
+        {
+            "attributes": {
+                "bikes_allowed": 1,
+                "block_id": "C01-2",
+                "direction_id": 1,
+                "headsign": "Nubian",
+                "name": "",
+                "wheelchair_accessible": 1
+            },
+            "id": "50262350",
+            "links": {
+                "self": "/trips/50262350"
+            },
+            "relationships": {
+                "route": {
+                    "data": {
+                        "id": "1",
+                        "type": "route"
+                    }
+                },
+                "route_pattern": {
+                    "data": {
+                        "id": "1-_-1",
+                        "type": "route_pattern"
+                    }
+                },
+                "service": {
+                    "data": {
+                        "id": "BUS12022-hbc12011-Wdy-02",
+                        "type": "service"
+                    }
+                },
+                "shape": {
+                    "data": {
+                        "id": "010109",
+                        "type": "shape"
+                    }
+                }
+            },
+            "type": "trip"
+        },
+        {
+            "attributes": {
+                "bikes_allowed": 1,
+                "block_id": "C01-5",
+                "direction_id": 1,
+                "headsign": "Nubian",
+                "name": "",
+                "wheelchair_accessible": 1
+            },
+            "id": "50262352",
+            "links": {
+                "self": "/trips/50262352"
+            },
+            "relationships": {
+                "route": {
+                    "data": {
+                        "id": "1",
+                        "type": "route"
+                    }
+                },
+                "route_pattern": {
+                    "data": {
+                        "id": "1-_-1",
+                        "type": "route_pattern"
+                    }
+                },
+                "service": {
+                    "data": {
+                        "id": "BUS12022-hbc12011-Wdy-02",
+                        "type": "service"
+                    }
+                },
+                "shape": {
+                    "data": {
+                        "id": "010109",
+                        "type": "shape"
+                    }
+                }
+            },
+            "type": "trip"
+        },
+        {
+            "attributes": {
+                "bikes_allowed": 1,
+                "block_id": "C01-7",
+                "direction_id": 1,
+                "headsign": "Nubian",
+                "name": "",
+                "wheelchair_accessible": 1
+            },
+            "id": "50262387",
+            "links": {
+                "self": "/trips/50262387"
+            },
+            "relationships": {
+                "route": {
+                    "data": {
+                        "id": "1",
+                        "type": "route"
+                    }
+                },
+                "route_pattern": {
+                    "data": {
+                        "id": "1-_-1",
+                        "type": "route_pattern"
+                    }
+                },
+                "service": {
+                    "data": {
+                        "id": "BUS12022-hbc12011-Wdy-02",
+                        "type": "service"
+                    }
+                },
+                "shape": {
+                    "data": {
+                        "id": "010109",
+                        "type": "shape"
+                    }
+                }
+            },
+            "type": "trip"
+        },
+        {
+            "attributes": {
+                "bikes_allowed": 1,
+                "block_id": "C01-10",
+                "direction_id": 0,
+                "headsign": "Harvard",
+                "name": "",
+                "wheelchair_accessible": 1
+            },
+            "id": "50262418",
+            "links": {
+                "self": "/trips/50262418"
+            },
+            "relationships": {
+                "route": {
+                    "data": {
+                        "id": "1",
+                        "type": "route"
+                    }
+                },
+                "route_pattern": {
+                    "data": {
+                        "id": "1-_-0",
+                        "type": "route_pattern"
+                    }
+                },
+                "service": {
+                    "data": {
+                        "id": "BUS12022-hbc12011-Wdy-02",
+                        "type": "service"
+                    }
+                },
+                "shape": {
+                    "data": {
+                        "id": "010108",
+                        "type": "shape"
+                    }
+                }
+            },
+            "type": "trip"
+        },
+        {
+            "attributes": {
+                "bikes_allowed": 1,
+                "block_id": "C01-12",
+                "direction_id": 0,
+                "headsign": "Harvard",
+                "name": "",
+                "wheelchair_accessible": 1
+            },
+            "id": "50262440",
+            "links": {
+                "self": "/trips/50262440"
+            },
+            "relationships": {
+                "route": {
+                    "data": {
+                        "id": "1",
+                        "type": "route"
+                    }
+                },
+                "route_pattern": {
+                    "data": {
+                        "id": "1-_-0",
+                        "type": "route_pattern"
+                    }
+                },
+                "service": {
+                    "data": {
+                        "id": "BUS12022-hbc12011-Wdy-02",
+                        "type": "service"
+                    }
+                },
+                "shape": {
+                    "data": {
+                        "id": "010108",
+                        "type": "shape"
+                    }
+                }
+            },
+            "type": "trip"
+        }
+    ],
+    "jsonapi": {
+        "version": "1.0"
+    }
+}

@@ -8,6 +8,10 @@
 async function getBusLocations(){
 	// MBTA real-time data for bus route 1
 	const url = 'https://api-v3.mbta.com/vehicles?filter[route]=1&include=trip';
+
+	// get the data
+	var response = await fetch(url)
+	console.log(response)
 }
 
 // request data on a timer
