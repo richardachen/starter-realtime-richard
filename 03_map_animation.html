@@ -14,12 +14,11 @@
 <style>
   body { margin: 0; padding: 0; }
   #map { position: absolute; top: 0; bottom: 0; width: 100%; }
-
-.map-overlay {
-  position: absolute;
-  left: 0;
-  padding: 10px;
-}
+  .map-overlay {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+  }
  
 </style>
 </head>
@@ -49,6 +48,8 @@
       .setLngLat([-71.092761, 42.357575])
       .addTo(map);
 
+// next: get live data or a diff route that you want to explore
+
   const busStops = [
       [-71.093729, 42.359244], 
       [-71.094915, 42.360175],
@@ -68,9 +69,12 @@
   let counter = 0;
   function move(){
 
-    // ---------------
-    //    Your Code   
-    // ---------------
+    setTimeout(() =>{
+      if (counter >= busStops.length) return;
+      marker.setLngLat(busStops[counter]);
+      counter++;
+      move();
+    }, 1000)
     
   }
 

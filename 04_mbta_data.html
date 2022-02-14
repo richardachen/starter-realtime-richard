@@ -10,15 +10,23 @@ async function getBusLocations(){
 	const url = 'https://api-v3.mbta.com/vehicles?filter[route]=1&include=trip';
 
 	// get the data
-	var response = await fetch(url)
-	console.log(response)
+	var response = await fetch(url);
+	var json = await response.json();
+	return json.data;
+	// console.log(response)
 }
 
 // request data on a timer
 async function run(){
+
+	const locations = await getBusLocations();
+	console.log(new Date());
+	console.log(locations);
+	// don't make timeout gap too short, or else you get banned
 	// request bus data
 
 	// timer
+	setTimeout(run,15000);
 }
 run();
 
