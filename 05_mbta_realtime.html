@@ -6,13 +6,13 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>Add a default marker</title>
+<title>Realtime marker updates</title>
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
 <script src="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js"></script>
 <link href="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css" rel="stylesheet" />
 <style>
   body { margin: 0; padding: 0; }
-  #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+  #map { position: absolute; top: 0; bottom: 0; width: 100%;}
 </style>
 </head>
 <body>
@@ -20,38 +20,104 @@
 
 <script>
 
+const d = new Date()
+var nightorday = 'mapbox://styles/mapbox/streets-v11';
+
+if(d.getHours() > 18 || d.getHours() < 6){
+  nightorday = 'mapbox://styles/mapbox/dark-v10';
+}
+
 // api token
+mapboxgl.accessToken = "pk.eyJ1IjoicmFjaGVuIiwiYSI6ImNremYxZmpkMjJtNzAyb3BxdDVnZXl0MWkifQ.PwmasYVtQw0NgfbsPp9nLg"
 
 // map instance
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/streets-v11',
+    // try to make an if statement for style later on if possible, to switch at sunset/sunrise
+    // style: 'mapbox://styles/mapbox/streets-v11',
+    style: nightorday,
     center: [-71.104081, 42.365554],
     zoom: 14
 });
+
+
+// markerlist
+// function setAll(){
+//   for(var i = 0; i < busStops.length; i++){
+//      markerlist.append(new mapboxgl.Marker()
+//       .setLngLat(busStops[i])
+//       .addTo(map))
+//   }
+// }
+
 
 // bus data from MBTA
 async function routeData(){
   var url  = 'https://api-v3.mbta.com/vehicles?filter[route]=1&include=trip';
   var res  = await fetch(url);
   var data = await res.json();
-  return data;  
+  // def working up to this point
+  // console.log(data.data);
+  return data;
 }
 
 // array of buses, signature is {id: bus.id, marker: marker}
 var buses = [];
 
+async function setBuses(){
+  setBusData = await routeData();
+  // also working up to this point
+  // console.log(setBusData.data);
+  // console.log(setBusData.data.length);
+  for(var i = 0; i < setBusData.data.length; i++){
+    // console.log('here');
+    // this part is working
+    // console.log(i);
+    // console.log([setBusData.data[i].attributes.latitude, setBusData.data[i].attributes.longitude]);
+    // var marker = new mapboxgl.Marker()
+    // // Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'latitude' at setBuses (05_mbta_realtime.html:60:33)
+    //   // .setLngLat([bus.attributes.latitude, bus.attributes.longitude])
+    //   .setLngLat([setBusData.data[i].attributes.latitude, setBusData.data[i].attributes.longitude])
+    //   .addTo(map)
+    // buses.push({id: setBusData[i].id});
+    // buses.push({id: setBusData[i].id, marker: marker});
+    buses.push({id: setBusData.data[i].id, marker: new mapboxgl.Marker()
+      .setLngLat([setBusData.data[i].attributes.latitude, setBusData.data[i].attributes.longitude])
+      .addTo(map)
+    });
+
+//       // , marker: new mapboxgl.marker()
+//       // .setLngLat(bus.attributes.latitude, bus.attributes.longitude)
+//       // .addTo(map)});
+  }
+}
+
+setBuses();
+console.log(buses);
+// one you have an array of buses, you can just update lnglat of each bus' marker
+// can we use callback functions?
+// buses.map(function setNewLocation(){
+//    marker.setLngLat(bus.attributes.latitude, bus.attributes.longitude)
+// })
 // update bus positions on map
-async function move(){
+// async function move(){
 
   // request bus data
+  // busData = await routeData();
+
 
   // loop through buses, update positions
+  // for(bus in busData){
+    // buses.append({id: bus.id, marker: new mapboxgl.marker()
+    //   .setLngLat(bus.attributes.latitude, bus.attributes.longitude)
+    //   .addTo(map)});
+    // how to retrieve bus from buses?
+  // }
 
- // timer
-
-}
-move();
+  // timer
+//   setTimeout(move,15000)
+// }
+// move();
 
 </script>
  
